@@ -1,60 +1,61 @@
 import random
 
-response=input("Quer jogar um dado?(digite sim ou não)")
+response=input("Quer jogar um dado?(digite s para sim ou n para não)")
 
 while True:
-    if response=="sim":
+    if response=="s":
         while True:
             no = random.randint(1,6)
+            print("O número é: ", no)
             if no==1:
                 print("[-----]")
-                print("[     ]")
-                print("[  1  ]")
-                print("[     ]")
+                print("|     |")
+                print("|  @  |")
+                print("|     |")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
             if no==2:
                 print("[-----]")
-                print("[2    ]")
-                print("[     ]")
-                print("[    2]")
+                print("|@    |")
+                print("|     |")
+                print("|    @|")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
             if no==3:
                 print("[-----]")
-                print("[3    ]")
-                print("[  3  ]")
-                print("[    3]")
+                print("|@    |")
+                print("|  @  |")
+                print("|    @|")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
             if no==4:
                 print("[-----]")
-                print("[4   4]")
-                print("[     ]")
-                print("[4   4]")
+                print("|@   @|")
+                print("|     |")
+                print("|@   @|")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
             if no==5:
                 print("[-----]")
-                print("[5   5]")
-                print("[  5  ]")
-                print("[5   5]")
+                print("|@   @|")
+                print("|  @  |")
+                print("|@   @|")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
             if no==6:
                 print("[-----]")
-                print("[6   6]")
-                print("[6   6]")
-                print("[6   6]")
+                print("|@   @|")
+                print("|@   @|")
+                print("|@   @|")
                 print("[-----]")
-                response=input("Gostaria de jogar o dado novamente?(responda sim ou não)")
+                response=input("Gostaria de jogar o dado novamente?(digite s para sim ou n para não)")
                 break
 
-    if response=="não":
+    if response=="n":
         print("Ok, obrigado!")
         break
